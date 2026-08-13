@@ -3,19 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Khine Zin — Junior Digital Transformation Associate</title>
-<meta name="description" content="Khine Zin — Junior Digital Transformation Associate. Building technology, empowering people, and sharing knowledge. Portfolio covering cloud, networking, security, and digital learning.">
+<title>Khaing Zin — Junior Digital Transformation Associate</title>
+<meta name="description" content="Khaing Zin — Junior Digital Transformation Associate. Building technology, empowering people, and sharing knowledge. Portfolio covering cloud, networking, security, and digital learning.">
 
-<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-<!-- Icons -->
-
 <style>
   :root{
-    /* ---- Light mode tokens ---- */
+
     --bg: #F7F4F8;
     --bg-elevated: #FFFFFF;
     --surface: rgba(255, 255, 255, 0.35);
@@ -33,7 +30,7 @@
     --lavender: #C2A6E8;
     --blue: #8EB8E0;
     --mint: #9FD8CE;
-    /* legacy aliases kept so existing rules referencing these still resolve */
+   
     --pink: var(--rose);
     --indigo: var(--violet);
 
@@ -80,6 +77,24 @@
   .icon{ width:1em; height:1em; font-size:18px; flex-shrink:0; display:inline-block; vertical-align:middle; }
   button{ font-family: inherit; }
 
+  /*Book cover*/
+  .book-cover {
+  background: tr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.book-cover img {
+  width: 65%;
+  height: 85%;
+  object-fit: contain;
+  display: block;
+  filter: none;
+}
+
+
   @media (prefers-reduced-motion: reduce){
     *{ animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
   }
@@ -92,7 +107,7 @@
 
   :focus-visible{ outline: 2px solid var(--violet); outline-offset: 3px; border-radius: 4px; }
 
-  /* ---------- Layout helpers ---------- */
+
   .wrap{ max-width: 1180px; margin: 0 auto; padding: 0 24px; }
   section{ position: relative; }
 
@@ -115,7 +130,7 @@
     background-size: 200% auto;
   }
 
-  /* ---------- Glass surfaces (frosted, true-translucent) ---------- */
+
   .glass{
     background: var(--surface-strong);
     -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(140%);
@@ -163,13 +178,12 @@
     border-color: #eb3027;
   }
 
-/* Yellow */
   .chrome-dots span:nth-child(2){
     background-color: #eba40c;
     border-color: #eba40c;
   }
 
-/* Green */
+
   .chrome-dots span:nth-child(3){
     background-color: #0da624;
     border-color: #0da624;
@@ -188,7 +202,7 @@
   .hero-copy p, .hero-copy h1{ text-shadow: 0 1px 24px rgba(255,255,255,.25); }
   html[data-theme="dark"] .hero-copy p, html[data-theme="dark"] .hero-copy h1{ text-shadow: 0 2px 20px rgba(0,0,0,.3); }
 
-  /* ---------- Buttons ---------- */
+
   .btn{
     display:inline-flex; align-items:center; gap:8px;
     padding: 13px 26px;
@@ -251,7 +265,7 @@
   .theme-toggle:hover{ transform: rotate(15deg); }
   .theme-toggle svg{ width:18px; height:18px; }
 
-  /* ---------- Reveal on scroll ---------- */
+
   .reveal{ opacity:0; transform: translateY(28px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
   .reveal.in{ opacity:1; transform: translateY(0); }
   .reveal-stagger > * { opacity:0; transform: translateY(24px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
@@ -263,7 +277,7 @@
   .reveal-stagger.in > *:nth-child(5){ transition-delay: .31s; }
   .reveal-stagger.in > *:nth-child(6){ transition-delay: .38s; }
 
-  /* ---------- Loading screen ---------- */
+
   #loader{
     position: fixed; inset:0; z-index: 9999;
     background: var(--bg);
@@ -276,12 +290,10 @@
   .loader-bar span{ position:absolute; inset:0; width:30%; background: linear-gradient(90deg, var(--violet), var(--pink)); animation: loadbar 1.1s ease-in-out infinite; }
   @keyframes loadbar{ 0%{ left:-30%; } 100%{ left:100%; } }
 
-  /* ---------- Aurora page backdrop (fixed, behind all content) ---------- */
   .aurora-wrap{ position:fixed; inset:0; overflow:hidden; z-index:-1; background: var(--bg); transition: background-color .4s var(--ease); }
   .aurora-blob{ position:absolute; border-radius:50%; filter: blur(70px); will-change: transform; opacity: .65; }
   html[data-theme="dark"] .aurora-blob{ opacity:.4; }
 
-  /* Scattered plus-mark texture, matching the reference screenshot */
   .grid-overlay{
     position:absolute; inset:0;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Cg stroke='white' stroke-width='1.4' stroke-linecap='round' opacity='0.5'%3E%3Cpath d='M8 4v8M4 8h8'/%3E%3Cpath d='M40 28v8M36 32h8'/%3E%3Cpath d='M22 46v8M18 50h8'/%3E%3C/g%3E%3C/svg%3E");
@@ -306,7 +318,6 @@
     50%{ transform: translate(18px, -26px); }
   }
 
-  /* ---------- Hero extras ---------- */
   .social-ico{
     width:40px; height:40px; border-radius:50%;
     display:flex; align-items:center; justify-content:center;
@@ -415,7 +426,6 @@
     #skillsGrid{ grid-template-columns: 1fr !important; }
   }
 
-  /* ---------- Timeline (trace-route signature element) ---------- */
   .timeline{ position:relative; padding-left: 42px; }
   .timeline::before{
     content:'';
@@ -459,7 +469,7 @@
     content:'▸'; position:absolute; left:0; color: var(--pink); font-size:12px; top:1px;
   }
 
-  /* ---------- Project cards ---------- */
+
   .project-card{
     display:grid; grid-template-columns: 220px 1fr;
     border-radius: var(--radius-lg);
@@ -494,8 +504,6 @@
     .project-card{ grid-template-columns: 1fr; }
     .project-visual{ height: 120px; }
   }
-
-  /* ---------- Certifications ---------- */
   .cert-badge{
     display:flex; align-items:center; gap:14px;
     padding: 20px 18px; border-radius: var(--radius-md);
@@ -511,7 +519,6 @@
   @media (max-width: 900px){ #certGrid{ grid-template-columns: repeat(2,1fr) !important; } }
   @media (max-width: 560px){ #certGrid{ grid-template-columns: 1fr !important; } }
 
-  /* ---------- Languages ---------- */
   .lang-card{ padding:24px; border-radius: var(--radius-md); }
   .lang-top{ display:flex; justify-content:space-between; font-weight:600; font-size:15px; margin-bottom:12px; }
   .lang-pct{ color: var(--violet); font-size:13px; }
@@ -523,21 +530,21 @@
     #languages .reveal-stagger{ grid-template-columns: 1fr !important; }
   }
 
-  /* ---------- Books ---------- */
+  /*-----book cover-----*/
   .book-card{ transition: transform .4s var(--ease); }
   .book-card:hover{ transform: translateY(-6px); }
   .book-cover{
     aspect-ratio: 4/3; border-radius: var(--radius-md);
     display:flex; align-items:center; justify-content:center;
-    box-shadow: 0 20px 40px -16px rgba(80,40,160,.35);
+    box-shadow: none;
+    overflow:hidden;
+    background:transparent
   }
-  .book-cover svg{ width:42px; height:42px; color:#fff; opacity:.95; }
 
   @media (max-width: 700px){
     #books .reveal-stagger{ grid-template-columns: 1fr !important; }
   }
 
-  /* ---------- Articles ---------- */
   .article-card{
     display:block; padding:26px 24px; border-radius: var(--radius-md);
     transition: transform .4s var(--ease), border-color .4s;
@@ -548,13 +555,13 @@
 
   @media (max-width: 900px){ #articleGrid{ grid-template-columns: 1fr !important; } }
 
-  /* ---------- Resume band ---------- */
+
   .resume-band{
     padding: 40px 36px; border-radius: var(--radius-lg);
     display:flex; justify-content:space-between; align-items:center; gap:30px; flex-wrap:wrap;
   }
 
-  /* ---------- Contact ---------- */
+
   .contact-row{ display:flex; align-items:center; gap:16px; }
   .contact-icon{
     width:44px; height:44px; border-radius:13px; flex-shrink:0;
@@ -729,18 +736,18 @@
 <symbol id="icon-instagram" viewBox="0 0 24 24" fill="currentColor"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></symbol>
 <symbol id="icon-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 9.5H5.67V18.5H8.34V9.5zM7 5.7a1.55 1.55 0 1 0 0 3.1 1.55 1.55 0 0 0 0-3.1zM18.33 18.5v-5.07c0-2.7-1.44-3.96-3.36-3.96-1.55 0-2.24.86-2.63 1.46v-1.43H9.67c.03.7 0 9 0 9h2.67v-5.03c0-.27.02-.54.1-.73.22-.55.73-1.12 1.58-1.12 1.12 0 1.57.85 1.57 2.1v4.78h2.74z"/></symbol>
 </svg>
-<!-- ============ LOADER ============ -->
+
 <div id="loader" aria-hidden="true">
   <div class="loader-mark">
-    <span class="grad-text">KHINE ZIN</span>
+    <span class="grad-text">KHAING ZIN</span>
     <div class="loader-bar"><span></span></div>
   </div>
 </div>
 
-<!-- ============ NAV ============ -->
+
 <nav id="nav">
   <div class="wrap nav-inner">
-    <a href="#top" class="logo">Khine Zin</a>
+    <a href="#top" class="logo">Khaing Zin</a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about" class="nav-link">About</a></li>
       <li><a href="#roles" class="nav-link">Roles</a></li>
@@ -763,13 +770,13 @@
   </div>
 </nav>
 
-<!-- ============ HERO ============ --> 
+
 <header id="top" style="min-height:100vh; display:flex; align-items:center; padding-top:110px; padding-bottom:60px;">
   <div class="wrap" style="position:relative; z-index:2; display:grid; grid-template-columns: 1.15fr 0.85fr; gap:64px; align-items:center;" id="heroGrid">
     <div class="hero-copy">
       <div class="eyebrow reveal" id="r-eyebrow">Mandalay, Myanmar · Available for opportunities</div>
       <h1 class="reveal" id="r-h1" style="font-size: clamp(40px, 6vw, 72px); line-height:1.02; font-weight:700; margin-bottom:22px;">
-        KHINE ZIN
+        KHAING ZIN
       </h1>
       <p class="reveal mono" id="r-title" style="font-size: clamp(15px, 1.6vw, 19px); color:var(--violet); font-weight:500; margin-bottom: 22px;">
         Junior Digital Transformation Associate
@@ -782,15 +789,15 @@
       </p>
 
       <div class="reveal" id="r-buttons" style="display:flex; flex-wrap:wrap; gap:14px; margin-bottom: 40px;">
-        <a href="assets/cv.pdf" class="btn btn-primary"><svg class="icon" style="width:16px;height:16px;"><use href="#icon-download"></use></svg>Download CV</a>
-        <a href="assets/resume.pdf" class="btn btn-ghost"><svg class="icon" style="width:16px;height:16px;"><use href="#icon-folder-kanban"></use></svg>View Portfolio</a>
-        <a href="#contact" class="btn btn-ghost"><svg class="icon" style="width:16px;height:16px;"><use href="#icon-mail"></use></svg>Contact Me</a>
+        <a href="assets/mycvprofile.pdf" class="btn btn-primary"><svg class="icon" style="width:16px;height:16px;"><use href="#icon-download"></use></svg>View CV</a>
+        <a href="assets/myresumeprofile.pdf" class="btn btn-ghost"><svg class="icon" style="width:16px;height:16px;"><use href="#icon-folder-kanban"></use></svg>View Resume</a>
+        <a href="mailto:zkhine418@gmail.com" class="btn btn-ghost"><svg class="icon" style="width:16px;height:16px;"><use href="#icon-mail"></use></svg>Contact Me</a>
       </div>
 
       <div class="reveal" id="r-socials" style="display:flex; gap:14px;">
         <a href="https://www.facebook.com/share/18jpkT4AAP/?mibextid=wwXIfr" target="_blank" rel="noopener" class="social-ico" aria-label="Facebook"><svg class="icon"><use href="#icon-facebook"></use></svg></a>
         <a href="https://www.instagram.com/justbek8ine?igsh=NjNmOGJrdzJqMXFz&utm_source=qr" target="_blank" rel="noopener" class="social-ico" aria-label="Instagram"><svg class="icon"><use href="#icon-instagram"></use></svg></a>
-        <a href="https://www.linkedin.com/in/khine-zin-a6543b41a/" target="_blank" rel="noopener" class="social-ico" aria-label="LinkedIn"><svg class="icon"><use href="#icon-linkedin"></use></svg></a>
+        <a href="www.linkedin.com/in/khaingzin9" target="_blank" rel="noopener" class="social-ico" aria-label="LinkedIn"><svg class="icon"><use href="#icon-linkedin"></use></svg></a>
         <a href="https://github.com/meOndaclOud" target="_blank" rel="noopener" class="social-ico" aria-label="GitHub"><svg class="icon"><use href="#icon-github"></use></svg></a>
         <a href="https://medium.com/@kyn3" target="_blank" rel="noopener" class="social-ico" aria-label="Medium"><svg class="icon"><use href="#icon-book-open"></use></svg></a>
         <a href="mailto:zkhine418@gmail.com" class="social-ico" aria-label="Email"><svg class="icon"><use href="#icon-mail"></use></svg></a>
@@ -804,11 +811,12 @@
           <div class="chrome-dots" style="margin-bottom:22px;"><span></span><span></span><span></span></div>
           <div class="mono" style="display:flex; align-items:center; gap:10px; color:var(--text-secondary); font-size:14.5px; margin-bottom:18px;">
             <svg class="icon" style="width:13px;height:13px;"><use href="#icon-chevron-down"></use></svg>
-            building khine zin's profile&hellip;
+            building khaing zin's profile&hellip;
           </div>
           <ul class="hero-checklist mono">
-            <li><span class="check">✓</span> ICT Coach @ CIY Club</li>
-            <li><span class="check">✓</span> Content Writer @ Rethink</li>
+            <li><span class="check">✓</span> ICT Coach @ CIY Club</li> 
+            <li><span class="check">✓</span>Technology Consultant</li>
+            <li><span class="check">✓</span> Content Writer @ The Rethink Corner</li>
             <li><span class="check">✓</span> 3xAWS Certified</li>
             <li><span class="check">✓</span> Mandalay, Myanmar</li>
           </ul>
@@ -823,7 +831,7 @@
     <svg class="icon"><use href="#icon-chevron-down"></use></svg>
   </a>
 </header>
-<!-- ============ ABOUT ============ -->
+
 <section id="about" style="padding: 130px 0 100px;">
   <div class="wrap" style="display:grid; grid-template-columns: 0.9fr 1.1fr; gap:72px; align-items:start;">
     <div class="reveal">
@@ -843,18 +851,18 @@
     </div>
 
     <div>
-      <!-- Stat counters -->
+
       <div class="reveal-stagger" id="statGrid" style="display:grid; grid-template-columns: repeat(4,1fr); gap:16px; margin-bottom: 40px;">
         <div class="glass" style="border-radius:18px; padding:22px 14px; text-align:center;">
           <div class="counter mono grad-text" data-target="5" style="font-size: 30px; font-weight:700;">0</div>
           <div style="font-size:12px; color:var(--text-tertiary); margin-top:6px; line-height:1.3;">Certifications</div>
         </div>
         <div class="glass" style="border-radius:18px; padding:22px 14px; text-align:center;">
-          <div class="counter mono grad-text" data-target="8" style="font-size: 30px; font-weight:700;">0</div>
+          <div class="counter mono grad-text" data-target="2" style="font-size: 30px; font-weight:700;">0</div>
           <div style="font-size:12px; color:var(--text-tertiary); margin-top:6px; line-height:1.3;">Projects</div>
         </div>
         <div class="glass" style="border-radius:18px; padding:22px 14px; text-align:center;">
-          <div class="counter mono grad-text" data-target="12" style="font-size: 30px; font-weight:700;">0</div>
+          <div class="counter mono grad-text" data-target="10+" style="font-size: 30px; font-weight:700;">0</div>
           <div style="font-size:12px; color:var(--text-tertiary); margin-top:6px; line-height:1.3;">Learning Resources</div>
         </div>
         <div class="glass" style="border-radius:18px; padding:22px 14px; text-align:center;">
@@ -863,7 +871,6 @@
         </div>
       </div>
 
-      <!-- Interests -->
       <div class="reveal">
         <p class="eyebrow" style="margin-bottom:18px;">Areas of Interest</p>
         <div style="display:flex; flex-wrap:wrap; gap:10px;">
@@ -880,12 +887,11 @@
     </div>
   </div>
 </section>
-<!-- ============ CURRENT ROLES ============ -->
 <section id="roles" style="padding: 60px 0 110px;">
   <div class="wrap">
     <div class="reveal" style="margin-bottom:48px;">
-      <div class="eyebrow">Right now</div>
-      <h2 style="font-size: clamp(28px, 3.6vw, 40px); font-weight:700;">What I'm doing today</h2>
+      <div class="eyebrow">Background</div>
+      <h2 style="font-size: clamp(28px, 3.6vw, 40px); font-weight:700;">Education</h2>
     </div>
 
     <div class="reveal-stagger" style="display:grid; grid-template-columns: repeat(3, 1fr); gap:24px;">
@@ -893,38 +899,37 @@
         <div class="role-icon" style="background: linear-gradient(135deg, var(--violet), var(--indigo));">
           <svg class="icon"><use href="#icon-graduation-cap"></use></svg>
         </div>
-        <h3 style="font-size:19px; margin-bottom:4px;">ICT Coach</h3>
-        <p class="mono" style="font-size:12.5px; color:var(--violet); margin-bottom:16px;">CIY Club Myanmar</p>
+        <h3 style="font-size:19px; margin-bottom:4px;">Bachelor of Science in Computer Networks</h3>
+        <p class="mono" style="font-size:12.5px; color:var(--violet); margin-bottom:16px;">Liverpool John Moores University</p>
         <p style="font-size:14.5px; color:var(--text-secondary); line-height:1.65;">
-          Empowering young learners through technology education, project-based learning, coaching, and digital skill development.
+          Developing a strong foundation in computer networking, cybersecurity, systems administration, and modern IT technologies through academic study and practical projects.
         </p>
       </div>
 
       <div class="role-card grad-border glass">
         <div class="role-icon" style="background: linear-gradient(135deg, var(--pink), var(--violet));">
-          <svg class="icon"><use href="#icon-feather"></use></svg>
+          <svg class="icon"><use href="#icon-graduation-cap"></use></svg>
         </div>
-        <h3 style="font-size:19px; margin-bottom:4px;">Content Writer</h3>
-        <p class="mono" style="font-size:12.5px; color:var(--violet); margin-bottom:16px;">The Rethink Corner</p>
+        <h3 style="font-size:19px; margin-bottom:4px;">Diploma in Project Management</h3>
+        <p class="mono" style="font-size:12.5px; color:var(--violet); margin-bottom:16px;">MIBA College</p>
         <p style="font-size:14.5px; color:var(--text-secondary); line-height:1.65;">
-          Creating educational content, articles, reflections, and digital books on technology, productivity, learning, and personal growth — published on Facebook and Medium.
+          Developing knowledge of project planning, scheduling, risk management, resource coordination, and delivery principles for managing technology and business projects.
         </p>
       </div>
 
       <div class="role-card grad-border glass">
         <div class="role-icon" style="background: linear-gradient(135deg, var(--blue), var(--indigo));">
-          <svg class="icon"><use href="#icon-server-cog"></use></svg>
+          <svg class="icon"><use href="#icon-graduation-cap"></use></svg>
         </div>
-        <h3 style="font-size:19px; margin-bottom:4px;">Technology Professional</h3>
-        <p class="mono" style="font-size:12.5px; color:var(--violet); margin-bottom:16px;">Cloud · Networking · Security</p>
+        <h3 style="font-size:19px; margin-bottom:4px;">Higher Diploma in Infrastructure and Networks</h3>
+        <p class="mono" style="font-size:12.5px; color:var(--violet); margin-bottom:16px;">Auston College</p>
         <p style="font-size:14.5px; color:var(--text-secondary); line-height:1.65;">
-          Building practical experience across digital technologies, cloud services, networking, cybersecurity concepts, automation, and modern workplace tools.
+          Building hands-on foundations in computer hardware/software, programming, and network infrastructure through practical technical training.
         </p>
       </div>
     </div>
   </div>
 </section>
-<!-- ============ SKILLS ============ -->
 <section id="skills" style="padding: 60px 0 110px;">
   <div class="wrap">
     <div class="reveal" style="margin-bottom:48px;">
@@ -970,7 +975,7 @@
         <svg class="icon skill-card-icon"><use href="#icon-terminal"></use></svg>
         <h3 style="font-size:16.5px; margin-bottom:14px;">Development & Tools</h3>
         <ul class="skill-list">
-          <li>Python</li><li>Flask</li><li>Git</li><li>GitHub</li>
+          <li>CSS</li><li>HTML</li><li>JavaScript</li><li>Git</li><li>GitHub</li>
         </ul>
       </div>
 
@@ -985,7 +990,6 @@
     </div>
   </div>
 </section>
-<!-- ============ EXPERIENCE TIMELINE ============ -->
 <section id="experience" style="padding: 110px 0;">
   <div class="wrap">
     <div class="reveal" style="margin-bottom:56px;">
@@ -1066,7 +1070,6 @@
     <div>
   </div>
 </section>
-<!-- ============ PROJECTS ============ -->
 <section id="projects" style="padding: 60px 0 110px;">
   <div class="wrap">
     <div class="reveal" style="margin-bottom:48px;">
@@ -1083,14 +1086,14 @@
         <div class="project-body">
           <h3 style="font-size:21px; margin-bottom:10px;">Resilient Campus Network with Suricata IDS and ELK SIEM</h3>
           <p style="font-size:14.5px; color:var(--text-secondary); line-height:1.65; margin-bottom:18px;">
-            Designed and implemented a secure and fault-tolerant campus network with centralized monitoring and intrusion detection.
+            Designed and implemented a secure and fault-tolerant campus network as a final-year project, integrating Suricata Intrusion Detection System (IDS) with the ELK Stack for centralized log collection, network monitoring, and security event analysis.
           </p>
           <div class="tag-row">
             <span class="tech-tag">EVE-NG</span><span class="tech-tag">Suricata</span><span class="tech-tag">ELK Stack</span><span class="tech-tag">Linux</span><span class="tech-tag">Networking</span>
           </div>
           <div style="display:flex; gap:14px; margin-top:20px;">
-            <a href="https://github.com" target="_blank" rel="noopener" class="proj-link"><svg class="icon" style="width:15px;height:15px;"><use href="#icon-github"></use></svg> GitHub</a>
-            <a href="#contact" class="proj-link"><svg class="icon" style="width:15px;height:15px;"><use href="#icon-file-text"></use></svg> Case Study</a>
+            <a href="" target="_blank" rel="noopener" class="proj-link"><svg class="icon" style="width:15px;height:15px;"><use href="#icon-github"></use></svg> GitHub</a>
+            <a href="/assets/finalyear.zip" class="proj-link"><svg class="icon" style="width:15px;height:15px;"><use href="#icon-file-text"></use></svg> Case Study</a>
           </div>
         </div>
       </div>
@@ -1109,7 +1112,7 @@
           </div>
           <div style="display:flex; gap:14px; margin-top:20px;">
             <a href="https://github.com" target="_blank" rel="noopener" class="proj-link"><svg class="icon" style="width:15px;height:15px;"><use href="#icon-github"></use></svg> GitHub</a>
-            <a href="#contact" class="proj-link"><svg class="icon" style="width:15px;height:15px;"><use href="#icon-file-text"></use></svg> Case Study</a>
+            <a href="" class="proj-link"><svg class="icon" style="width:15px;height:15px;"><use href="#icon-file-text"></use></svg> Case Study</a>
           </div>
         </div>
       </div>
@@ -1136,7 +1139,6 @@
     </div>
   </div>
 </section>
-<!-- ============ CERTIFICATIONS ============ -->
 <section id="certifications" style="padding: 110px 0 60px;">
   <div class="wrap">
     <div class="reveal" style="margin-bottom:48px;">
@@ -1210,7 +1212,6 @@
     </div>
   </div>
 </section>
-<!-- ============ DIGITAL BOOKS ============ -->
 <section id="books" style="padding: 60px 0 110px;">
   <div class="wrap">
     <div class="reveal" style="margin-bottom:48px;">
@@ -1224,42 +1225,29 @@
     <div class="reveal-stagger" style="display:grid; grid-template-columns: repeat(3,1fr); gap:24px;">
 
       <div class="book-card">
-        <div class="book-cover" style="background: linear-gradient(160deg, #F0876B, #E895B3);">
-          <svg class="icon"><use href="#icon-layout-grid"></use></svg>
+        <div class="book-cover"> 
+            <img src="/assets/notionbook.png" alt="Book cover">
         </div>
-        <h3 style="font-size:17px; margin:18px 0 8px;">Notion for Productivity</h3>
+        <h3 style="font-size:17px; margin:18px 0 8px;">Notion for All</h3>
         <p style="font-size:13.5px; color:var(--text-secondary); line-height:1.6; margin-bottom:16px;">
           A practical guide to organizing work, learning, and personal knowledge.
         </p>
-        <a href="https://medium.com/@kyn3" target="_blank" rel="noopener" class="proj-link">Read More <svg class="icon" style="width:14px;height:14px;"><use href="#icon-arrow-right"></use></svg></a>
+        <a href="" target="_blank" rel="noopener" class="proj-link">Read More <svg class="icon" style="width:14px;height:14px;"><use href="#icon-arrow-right"></use></svg></a>
       </div>
 
-      <div class="book-card">
-        <div class="book-cover" style="background: linear-gradient(160deg, #E895B3, #C2A6E8);">
-          <svg class="icon"><use href="#icon-notebook-pen"></use></svg>
+      <!---<div class="book-card">
+        <div class="book-cover"> 
+            <img src="/assets/wheresalmonreturn.png" alt="Book cover">
         </div>
-        <h3 style="font-size:17px; margin:18px 0 8px;">Rethink Corner</h3>
+        <h3 style="font-size:17px; margin:18px 0 8px;">Where Salmon Return</h3>
         <p style="font-size:13.5px; color:var(--text-secondary); line-height:1.6; margin-bottom:16px;">
-          Reflections on growth, technology, learning, and life.
+          Reflections on growth, and life.
         </p>
         <a href="https://medium.com/@kyn3" target="_blank" rel="noopener" class="proj-link">Read More <svg class="icon" style="width:14px;height:14px;"><use href="#icon-arrow-right"></use></svg></a>
-      </div>
-
-      <div class="book-card">
-        <div class="book-cover" style="background: linear-gradient(160deg, #8EB8E0, #9FD8CE);">
-          <svg class="icon"><use href="#icon-brain-circuit"></use></svg>
-        </div>
-        <h3 style="font-size:17px; margin:18px 0 8px;">AI & Learning Notes</h3>
-        <p style="font-size:13.5px; color:var(--text-secondary); line-height:1.6; margin-bottom:16px;">
-          Practical insights on using AI for productivity and learning.
-        </p>
-        <a href="https://medium.com/@kyn3" target="_blank" rel="noopener" class="proj-link">Read More <svg class="icon" style="width:14px;height:14px;"><use href="#icon-arrow-right"></use></svg></a>
-      </div>
-
+      </div> --->
     </div>
   </div>
 </section>
-<!-- ============ WRITING ============ -->
 <section id="writing" style="padding: 110px 0;">
   <div class="wrap">
     <div class="reveal" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-end; gap:20px; margin-bottom:48px;">
@@ -1281,19 +1269,17 @@
         <p style="font-size:13.5px; color:var(--text-secondary); line-height:1.6;">A few years ago, if someone had asked me what cloud computing was, I probably would have given a vague answer involving “servers on the internet.” That was the extent of my understanding.</p>
         <span class="article-cta mono">Read article →</span>
       </a>
-      <a href="https://medium.com/@kyn3/auto-scaling-and-load-balancing-358b70da5d73?postPublishedType=repub" target="_blank" rel="noopener" class="article-card glass">
+      <a href="https://medium.com/@kyn3/aws-well-architected-framework-the-6-pillars-i-started-seeing-differently-6fa174a71e14" target="_blank" rel="noopener" class="article-card glass">
         <span class="article-tag mono"> AWS . LEARNING </span>
-        <h3 style="font-size:17px; margin:14px 0 10px; line-height:1.35;">Auto Scaling and Load Balancing</h3>
-        <p style="font-size:13.5px; color:var(--text-secondary); line-height:1.6;">Load Balancer ဆိုတာ user request တွေကို EC2 instance တစ်လုံးတည်းကိုဘဲ targetမထားဘဲbackend instance တွေကြားက health check အပေါ်မူတည်ပြီး balanceလုပ်ပေးတဲ့AWS service</p>
+        <h3 style="font-size:17px; margin:14px 0 10px; line-height:1.35;">AWS Well-Architected Framework: The 6 Pillars I Started Seeing Differently</h3>
+        <p style="font-size:13.5px; color:var(--text-secondary); line-height:1.6;">AWS ကိုလေ့လာရင်း ကျွန်မအတွက် challengingဖြစ်တာက Service အသစ်တွေ ဘယ်လောက်သိလာလဲဆိုတာထက် ကိုယ်တည်ဆောက်ထားတဲ့ System ကို ပြန်ကြည့်တဲ့အခါ မေးခွန်းတွေ ဘယ်လောက်များလာလဲဆိုတာပါ။</p>
         <span class="article-cta mono">Read article →</span>
       </a>
-      <a href="https://www.facebook.com/share/p/18tEpFLd8m/" target="_blank" rel="noopener" class="article-card glass">
+      <a href="https://www.facebook.com/share/p/1Hsa6ehqSV/" target="_blank" rel="noopener" class="article-card glass">
         <span class="article-tag mono">PERSONAL BLOG</span>
-        <h3 style="font-size:17px; margin:14px 0 10px; line-height:1.35;">ချစ်ရုံနဲ့လုံလောက်ပြီလား.</h3>
-        <p style="font-size:13.5px; color:var(--text-secondary); line-height:1.6;">ဆက်ဆံရေးတစ်ခုမှာ
-လူတွေက ကိုယ်ဖြစ်ချင်တဲ့ပုံစံမျိုးကိုဘဲ ရအောင်ကြိုးစားယူတတ်ကြပြီး တစ်ဖက်လူ လိုအပ်နေတဲ့ ပုံစံကို မေ့သွားတတ်ကြပါတယ်။
-ကိုယ်ခံစားနေရတာကို နားလည်ပေးစေချင်သလောက်တစ်ဖက်လူကို နားလည်ဖို့တော့ မကြိုးစားမိကြဘူးပေါ့။
-အဲ့ဒီအချိန်မှာ ပြဿနာဆိုတာ တဖြည်းဖြည်း ပေါ်လာတတ်တယ်။</p>
+        <h3 style="font-size:17px; margin:14px 0 10px; line-height:1.35;">ပတ်ဝန်းကျင်ကပြောတဲ့Hallucinationအကြောင်း</h3>
+        <p style="font-size:13.5px; color:var(--text-secondary); line-height:1.6;">“Hallucination” ဆိုတာ စိတ်ပညာအရ တကယ်မရှိတဲ့အရာတစ်ခုကို တကယ်ရှိနေတယ်လို့ ဦးနှောက်က လက်ခံသွားတဲ့ စိတ်အခြေအနေတစ်ခုကို ဆိုလိုကြတယ်။
+မရှိတဲ့အသံကို ကြားနိုင်တယ်၊ မရှိတဲ့အရာကို မြင်နိုင်တယ်၊ လက်တွေ့မှာ မဖြစ်နေတဲ့အရာတစ်ခုကို ဖြစ်နေတယ်လို့ ယုံကြည်သွားတာမျိုးတွေပါ။</p>
         <span class="article-cta mono">Read article →</span>
       </a>
       <a href="https://www.facebook.com/share/p/1F7SLmkdSb/" target="_blank" rel="noopener" class="article-card glass">
@@ -1307,7 +1293,7 @@
     </div>
   </div>
 </section>
-<!-- ============ RESUME ============ -->
+                                         
 <section id="resume" style="padding: 0 0 110px;">
   <div class="wrap">
     <div class="reveal grad-border glass resume-band">
@@ -1317,15 +1303,14 @@
         <p style="color:var(--text-secondary); font-size:14.5px;">Full work history, certifications, and skills — in one document.</p>
       </div>
       <div style="display:flex; flex-wrap:wrap; gap:12px;">
-        <a href="assets/resume.pdf" class="btn btn-primary"><svg class="icon" style="width:16px;height:16px;"><use href="#icon-download"></use></svg> Download Resume</a>
-        <a href="assets/cv.pdf" class="btn btn-ghost"><svg class="icon" style="width:16px;height:16px;"><use href="#icon-file-down"></use></svg> Download CV</a>
+        <a href="assets/myresumeprofile.pdf" class="btn btn-primary"><svg class="icon" style="width:16px;height:16px;"><use href="#icon-download"></use></svg> Download Resume</a>
+        <a href="assets/mycvprofile.pdf" class="btn btn-ghost"><svg class="icon" style="width:16px;height:16px;"><use href="#icon-file-down"></use></svg> Download CV</a>
         <a href="https://www.facebook.com/xxine.est9" class="btn btn-ghost"><svg class="icon" style="width:16px;height:16px;"><use href="#icon-external-link"></use></svg> View Online</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ CONTACT ============ -->
 <section id="contact" style="padding: 0 0 110px;">
   <div class="wrap">
     <div class="reveal" style="margin-bottom:48px; text-align:center;">
@@ -1374,11 +1359,10 @@
   </div>
 </section>
 
-<!-- ============ FOOTER ============ -->
 <footer style="padding: 56px 0 40px; border-top:1px solid var(--border);">
   <div class="wrap" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:24px;">
     <div>
-      <h3 style="font-size:20px; margin-bottom:6px;">KHINE ZIN</h3>
+      <h3 style="font-size:20px; margin-bottom:6px;">KHAING ZIN</h3>
       <p class="mono" style="font-size:12px; color:var(--violet); margin-bottom:8px;">Junior Digital Transformation Associate</p>
       <p style="font-size:13px; color:var(--text-tertiary); max-width:340px;">Building technology, empowering people, and sharing knowledge.</p>
     </div>
@@ -1391,11 +1375,11 @@
     </div>
   </div>
   <div class="wrap" style="margin-top:34px; padding-top:24px; border-top:1px solid var(--border); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px;">
-    <span class="mono" style="font-size:12px; color:var(--text-tertiary);">© 2026 Khine Zin. All rights reserved.</span>
+    <span class="mono" style="font-size:12px; color:var(--text-tertiary);">© 2026 Khaing Zin. All rights reserved.</span>
     <button id="backToTop" class="theme-toggle" aria-label="Back to top"><svg class="icon"><use href="#icon-arrow-up"></use></svg></button>
   </div>
 </footer>
-<!-- Mobile menu panel -->
+
 <div id="mobileMenu" class="glass" style="position:fixed; top:0; right:0; height:100vh; width:78vw; max-width:320px; z-index:200; transform:translateX(100%); transition: transform .4s var(--ease); padding:90px 28px 28px; display:flex; flex-direction:column; gap:22px;">
   <a href="#about" class="nav-link mobile-link">About</a>
   <a href="#roles" class="nav-link mobile-link">Roles</a>
@@ -1408,9 +1392,7 @@
 <div id="menuOverlay" style="position:fixed; inset:0; background:rgba(0,0,0,.4); z-index:150; opacity:0; visibility:hidden; transition:opacity .4s, visibility .4s;"></div>
 
 <script>
-  // icons are inline SVG <use> references — no JS init needed
 
-  /* ---------- Theme ---------- */
   const root = document.documentElement;
   const themeToggle = document.getElementById('themeToggle');
   const iconSun = document.getElementById('iconSun');
