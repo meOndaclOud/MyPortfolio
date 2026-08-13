@@ -1346,7 +1346,7 @@
       <form class="grad-border glass" id="contactForm" style="padding:36px 30px; display:flex; flex-direction:column; gap:18px;">
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
           <div class="field"><label for="cf-name">Name</label><input id="cf-name" name="name" type="text" required placeholder="Your name"></div>
-          <div class="field"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" required placeholder="you@email.com"></div>
+          <div class="field"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" required placeholder="example@email.com"></div>
         </div>
         <div class="field"><label for="cf-subject">Subject</label><input id="cf-subject" name="subject" type="text" placeholder="What's this about?"></div>
         <div class="field"><label for="cf-message">Message</label><textarea id="cf-message" name="message" rows="4" required placeholder="Tell me a bit about it..."></textarea></div>
@@ -1416,20 +1416,19 @@
     applyTheme(current === 'dark' ? 'light' : 'dark');
   });
 
-  /* ---------- Loader ---------- */
   window.addEventListener('load', () => {
     setTimeout(() => { document.getElementById('loader').classList.add('done'); }, 500);
   });
-  // failsafe in case load event is delayed
+
   setTimeout(() => { document.getElementById('loader').classList.add('done'); }, 2500);
 
-  /* ---------- Nav scroll state ---------- */
+
   const navEl = document.getElementById('nav');
   window.addEventListener('scroll', () => {
     navEl.classList.toggle('scrolled', window.scrollY > 30);
   }, { passive: true });
 
-  /* ---------- Mobile menu ---------- */
+
   const menuToggle = document.getElementById('menuToggle');
   const mobileMenu = document.getElementById('mobileMenu');
   const menuOverlay = document.getElementById('menuOverlay');
@@ -1447,7 +1446,7 @@
   menuOverlay.addEventListener('click', closeMenu);
   document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', closeMenu));
 
-  /* ---------- Scroll reveal (IntersectionObserver) ---------- */
+
   const revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
   const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -1459,7 +1458,7 @@
   }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
   revealEls.forEach(el => io.observe(el));
 
-  /* ---------- Animated counters ---------- */
+
   const counters = document.querySelectorAll('.counter');
   const counterIO = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -1483,7 +1482,7 @@
   }, { threshold: 0.4 });
   counters.forEach(c => counterIO.observe(c));
 
-  /* ---------- Language bars ---------- */
+
   const langBars = document.querySelectorAll('.lang-fill');
   const langIO = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -1495,7 +1494,6 @@
   }, { threshold: 0.5 });
   langBars.forEach(b => langIO.observe(b));
 
-  /* ---------- Contact form (no backend — demo confirmation) ---------- */
   const contactForm = document.getElementById('contactForm');
   const formStatus = document.getElementById('formStatus');
   contactForm.addEventListener('submit', (e) => {
